@@ -97,10 +97,15 @@ int main(int argc, char** argv) {
 													if (op_menu == 'y'||op_menu == 'Y'){
 														system("CLS");
 														cout<<"untuk rumus mecari kecepatan adalah Jarak Di Bagi Waktu (v=s/t)\n";
+														cout<<"\n";
 														cout<< rumus;
+														cout<<"\n";
 														cout<< jabar_1<<" "<<a1<<" / ("<< am << "/60 = "<< a1/hasil<<") \n";
+														cout<<"\n";
 														cout<<"karena waktu yang di gunakan adalah menit, maka di ubah menjadi jam dengan cara (menit / 60)\n";
+														cout<<"\n";
 														cout<<"jadi "<<am<<"/ 60"<<" = "<<hasil<<" jam\n";
+														cout<<"\n";
 														cout<<	"dik : \n"
 																<<"s = "<<a1<<" KM\n"
 																<<"t = "<<hasil<<" jam\n"
