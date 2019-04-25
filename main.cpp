@@ -100,7 +100,7 @@ int main(int argc, char** argv) {
 														cout<< rumus;
 														cout<< jabar_1<<" "<<a1<<" / ("<< am << "/60 = "<< a1/hasil<<") \n";
 														cout<<"karena waktu yang di gunakan adalah menit, maka di ubah menjadi jam dengan cara (menit / 60)\n";
-														cout<<"jadi "<<am<<"/ 60"<<" = "<<hasil<<" jam";
+														cout<<"jadi "<<am<<"/ 60"<<" = "<<hasil<<" jam\n";
 														cout<<	"dik : \n"
 																<<"s = "<<a1<<" KM\n"
 																<<"t = "<<hasil<<" jam\n"
