@@ -18,7 +18,7 @@ int main(int argc, char** argv) {
 	char perintah;
 	char c_op;
 	char satuan;
-	cout.precision(4);
+	cout.precision(3);
 // variabel	tambahan
 	string bye ="*****************************\n"
 				"*                           *\n"
@@ -85,6 +85,7 @@ int main(int argc, char** argv) {
 											cin>>am;
 											hasil = am/60;
 											system ("CLS");
+											jawab_1 :
 											cout<<"**************************************************************************************************************\n";
 											cout<<"*                                                                                                            *\n";
 											cout<<"      kecepatan dari jarak tempuh "<<a1<<" KM"<<" dengan waktu "<<am<<" menit adalah "<<a1/hasil<<" KM/Jam     \n";
@@ -100,7 +101,7 @@ int main(int argc, char** argv) {
 														cout<<"\n";
 														cout<< rumus;
 														cout<<"\n";
-														cout<< jabar_1<<" "<<a1<<" / ("<< am << "/60 = "<< a1/hasil<<") \n";
+														cout<< jabar_1<<" "<<a1<<" / ("<< am << "/60 )\n";
 														cout<<"\n";
 														cout<<"karena waktu yang di gunakan adalah menit, maka di ubah menjadi jam dengan cara (menit / 60)\n";
 														cout<<"\n";
@@ -109,20 +110,47 @@ int main(int argc, char** argv) {
 														cout<<	"dik : \n"
 																<<"s = "<<a1<<" KM\n"
 																<<"t = "<<hasil<<" jam\n"
-																<<"dit : v\n"
-																<<"    = "<<a1<<"/"<<hasil
-																<<"    = "<<a1/hasil
+																<<"dit : \n"
+																<<"v   = ?\n"
+																<<"v   = "<<a1<<"/"<<hasil<<"\n"
+																<<"    = "<<a1/hasil<<" KM/Jam"
 																<<"\n"
-																<<"jadi kecepatan dari jarak tempuh "<<a1<<" KM"<<" dengan waktu "<<am<<" menit adalah "<<a1/hasil<<" KM/Jam";
+																<<"\n"
+																<<"jadi kecepatan dari jarak tempuh "<<a1
+																<<" KM"<<" dengan waktu "<<am<<" menit adalah "
+																<<a1/hasil<<" KM/Jam"
+																<<"\n"
+																<<"\n";
+														cout<<"(M) = Kembali Ke Menu Utama      (X) = Keluar";
+														cout<<"\n"
+															<<"\n"
+															<<"silahkan masukan pilihan anda = ";
+														cin>>op_menu;
+														if (op_menu == 'm'||op_menu == 'M'){
+														system("CLS");
+														goto menu;
+														}else if (op_menu == 'x'|| op_menu == 'X'){
+															cout<<bye;
+															break ;
+															exit(0);
+														}else{
+														system("CLS");
+														cout<<"kode yang anda masukan salah \n";
+														goto jawab_1;
+														}
+														
 													}else if (op_menu == 'm'||op_menu == 'M'){
 														system("CLS");
 														goto menu;
 													}else if (op_menu == 'x'|| op_menu == 'X'){
+														system("CLS");
 														cout<<bye;
 														break ;
 														exit(0);
 													}else{
-													cout<<"kode yang anda masukan salah";
+													system("CLS");
+													cout<<"kode yang anda masukan salah \n";
+													goto jawab_1;
 													}
 										}else if (satuan == 'J' || satuan == 'j'){
 											cout<<"masukan waktu tempuh dengan satuan Jam = ";
