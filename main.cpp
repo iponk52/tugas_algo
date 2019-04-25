@@ -25,8 +25,8 @@ int main(int argc, char** argv) {
 				"*   Selamat Tinggal   >_<   *\n"
 				"*                           *\n"
 				"*****************************\n";
-	string rumus =	"v = kecepatan \n";
-					"t = jarak tempuh\n";
+	string rumus =	"v = kecepatan \n"
+					"t = jarak tempuh\n"
 					"s = waktu tempuh \n";
 	string jabar_1 = "jadi rumus yang di gunakan sekarang adalah = ";
 
@@ -100,7 +100,7 @@ int main(int argc, char** argv) {
 														cout<< rumus;
 														cout<< jabar_1<<" "<<a1<<" / ("<< am << "/60 = "<< a1/hasil<<") \n";
 														cout<<"karena waktu yang di gunakan adalah menit, maka di ubah menjadi jam dengan cara (menit / 60)\n";
-														cout<<"jadi "<<am<<"/ 60"<<" = "<<hasil;
+														cout<<"jadi "<<am<<"/ 60"<<" = "<<hasil<<" jam";
 													}else if (op_menu == 'm'||op_menu == 'M'){
 														system("CLS");
 														goto menu;
