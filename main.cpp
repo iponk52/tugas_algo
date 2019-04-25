@@ -25,6 +25,12 @@ int main(int argc, char** argv) {
 				"*   Selamat Tinggal   >_<   *\n"
 				"*                           *\n"
 				"*****************************\n";
+	string rumus =	"v = kecepatan \n";
+					"t = jarak tempuh\n";
+					"s = waktu tempuh \n";
+	string jabar_1 = "jadi rumus yang di gunakan sekarang adalah = ";
+
+
 								
 // program mulai				
 	menu:
@@ -72,18 +78,40 @@ int main(int argc, char** argv) {
 										cout<<"Masukan Jarak Tempuh Dengan Satuan KM : ";
 										cin>>a1;
 										waktu :
-										system ("CLS");
 										cout<< "pilih satuan waktu, (J)=jam atau (M)=Menit = ";
 										cin>>satuan;
 										if (satuan == 'm'|| satuan == 'M'){
-											system ("CLS");
 											cout<<"masukan waktu tempuh dengan satuan Menit = ";
 											cin>>am;
 											hasil = am/60;
-											total = hasil+aj;
-											cout<<"kecepatan dari jarak tempuh "<<a1<<" KM"<<" dengan waktu "<<am<<" menit adalah "<<a1/total<<" KM/Jam";
-										}else if (satuan == 'J' || satuan == 'j'){
 											system ("CLS");
+											cout<<"**************************************************************************************************************\n";
+											cout<<"*                                                                                                            *\n";
+											cout<<"      kecepatan dari jarak tempuh "<<a1<<" KM"<<" dengan waktu "<<am<<" menit adalah "<<a1/hasil<<" KM/Jam     \n";
+											cout<<"*                                                                                                            *\n";
+											cout<<"*   (Y) = melihat menjabaran     (M) = Kembali Ke Menu Utama      (X) = Keluar                               *\n";
+											cout<<"**************************************************************************************************************\n";
+											cout<<"\n";
+											cout<<"ingin melihat menjabarannya ?, pilih 'Y' untuk melihat, atau 'M' untuk kembali ke menu = " ;
+												cin>>op_menu;
+													if (op_menu == 'y'||op_menu == 'Y'){
+														system("CLS");
+														cout<<"untuk rumus mecari kecepatan adalah Jarak Di Bagi Waktu (v=s/t),";
+														cout<< rumus;
+														cout<< jabar_1<<" "<<a1<<" / ("<< am << "/60 = "<< a1/hasil<<") \n";
+														cout<<"karena waktu yang di gunakan adalah menit, maka di ubah menjadi jam dengan cara (menit / 60)\n";
+														cout<<"jadi "<<am<<"/ 60"<<" = "<<hasil;
+													}else if (op_menu == 'm'||op_menu == 'M'){
+														system("CLS");
+														goto menu;
+													}else if (op_menu == 'x'|| op_menu == 'X'){
+														cout<<bye;
+														break ;
+														exit(0);
+													}else{
+													cout<<"kode yang anda masukan salah";
+													}
+										}else if (satuan == 'J' || satuan == 'j'){
 											cout<<"masukan waktu tempuh dengan satuan Jam = ";
 											cin>>aj;
 											total = hasil+aj;
