@@ -130,6 +130,7 @@ int main(int argc, char** argv) {
 														system("CLS");
 														goto menu;
 														}else if (op_menu == 'x'|| op_menu == 'X'){
+															system("CLS");
 															cout<<bye;
 															break ;
 															exit(0);
@@ -155,8 +156,73 @@ int main(int argc, char** argv) {
 										}else if (satuan == 'J' || satuan == 'j'){
 											cout<<"masukan waktu tempuh dengan satuan Jam = ";
 											cin>>aj;
-											total = hasil+aj;
-											cout<<"kecepatan dari jarak tempuh "<<a1<<" KM"<<" dengan waktu "<<total<<" jam"<<" adalah "<<a1/total<<"KM/Jam";
+											system ("CLS");
+											jawab_1j :
+											cout<<"**************************************************************************************************************\n";
+											cout<<"*                                                                                                            *\n";
+											cout<<" kecepatan dari jarak tempuh "<<a1<<" KM"<<" dengan waktu "<<aj<<" jam"<<" adalah "<<a1/aj<<"KM/Jam     \n";
+											cout<<"*                                                                                                            *\n";
+											cout<<"*   (Y) = melihat menjabaran     (M) = Kembali Ke Menu Utama      (X) = Keluar                               *\n";
+											cout<<"**************************************************************************************************************\n";
+											cout<<"\n";
+											cout<<"ingin melihat menjabarannya ?, pilih 'Y' untuk melihat, atau 'M' untuk kembali ke menu = " ;
+												cin>>op_menu;
+													if (op_menu == 'y'||op_menu == 'Y'){
+														system("CLS");
+														cout<<"untuk rumus mecari kecepatan adalah Jarak Di Bagi Waktu (v=s/t)\n";
+														cout<<"\n";
+														cout<< rumus;
+														cout<<"\n";
+														cout<< jabar_1<<" "<<a1<<" / "<< aj <<"\n";
+														cout<<"\n";
+														cout<<"karena waktu yang di gunakan adalah jam, maka langsung di bagi menggunakan rumus \n";
+														cout<<"\n";
+														cout<<	"dik : \n"
+																<<"s = "<<a1<<" KM\n"
+																<<"t = "<<aj<<" jam\n"
+																<<"dit : \n"
+																<<"v   = ?\n"
+																<<"v   = "<<a1<<"/"<<aj<<"\n"
+																<<"    = "<<a1/aj<<" KM/Jam"
+																<<"\n"
+																<<"\n"
+																<<"jadi kecepatan dari jarak tempuh "<<a1
+																<<" KM"<<" dengan waktu "<<aj<<" jam adalah "
+																<<a1/aj<<" KM/Jam"
+																<<"\n"
+																<<"\n";
+														cout<<"(M) = Kembali Ke Menu Utama      (X) = Keluar";
+														cout<<"\n"
+															<<"\n"
+															<<"silahkan masukan pilihan anda = ";
+														cin>>op_menu;
+														if (op_menu == 'm'||op_menu == 'M'){
+														system("CLS");
+														goto menu;
+														}else if (op_menu == 'x'|| op_menu == 'X'){
+															system("CLS");
+															cout<<bye;
+															break ;
+															exit(0);
+														}else{
+														system("CLS");
+														cout<<"kode yang anda masukan salah \n";
+														goto jawab_1j;
+														}
+														
+													}else if (op_menu == 'm'||op_menu == 'M'){
+														system("CLS");
+														goto menu;
+													}else if (op_menu == 'x'|| op_menu == 'X'){
+														system("CLS");
+														cout<<bye;
+														break ;
+														exit(0);
+													}else{
+													system("CLS");
+													cout<<"kode yang anda masukan salah \n";
+													goto jawab_1;
+													};
 										}else{
 											system ("CLS");
 											cout<<"pilihan yang anda masukan salah \n";
