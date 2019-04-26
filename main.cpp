@@ -154,6 +154,7 @@ int main(int argc, char** argv) {
 													system("CLS");
 													cout<<"kode yang anda masukan salah \n";
 													goto jawab_1;
+													break;
 													}
 										}else if (satuan == 'J' || satuan == 'j'){
 											cout<<"masukan waktu tempuh dengan satuan Jam = ";
@@ -313,6 +314,7 @@ int main(int argc, char** argv) {
 													system("CLS");
 													cout<<"kode yang anda masukan salah \n";
 													goto jawab_3;
+													break;
 													}
 										}else if (satuan == 'J' || satuan == 'j'){
 											cout<<"masukan waktu tempuh dengan satuan Jam = ";
@@ -379,6 +381,7 @@ int main(int argc, char** argv) {
 													system("CLS");
 													cout<<"kode yang anda masukan salah \n";
 													goto jawab_1;
+													break;
 													};
 										}else{
 											system ("CLS");
@@ -449,6 +452,7 @@ int main(int argc, char** argv) {
 														system("CLS");
 														cout<<"kode yang anda masukan salah \n";
 														goto jawab_4j;
+														break;
 														}
 														
 													}else if (op_menu == 'm'||op_menu == 'M'){
@@ -463,6 +467,7 @@ int main(int argc, char** argv) {
 													system("CLS");
 													cout<<"kode yang anda masukan salah \n";
 													goto jawab_1;
+													break;
 													};
 									case 'm' :
 										system ("CLS");
@@ -480,8 +485,15 @@ int main(int argc, char** argv) {
 										cout<<bye;
 										break;
 										exit(0);
-								};
-							break;
+									default :
+										system ("CLS");
+										printf 	("\n"
+											"  Pilihan Yang Anda Masukan Salah !!! \n"
+											"\n"
+											);
+									goto menu_main;
+										};
+									break;
 //akhir kalkulator
 						case '2':
 //tentang 
